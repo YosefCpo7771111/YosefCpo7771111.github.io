@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  scroll-behavior: smooth;
 }
 ::selection {
   background: var(--main-text-color);
@@ -89,7 +90,7 @@ nav .fas {
     font-size: 20px;
     cursor: pointer;
   }
-  nav .fas:hover + ul {
+  .show {
     top: 95px;
     transition: 0.5s;
   }
@@ -103,7 +104,7 @@ nav .fas {
     text-align: center;
     width: 70%;
   }
-  nav ul li {
+  nav ul li a {
     margin-bottom: 30px;
     color: black !important;
     background-color: white;
@@ -111,11 +112,11 @@ nav .fas {
     padding: 15px 0;
     border-bottom: 1px solid rgba(204, 204, 204, 0.3);
   }
-  nav ul li.activ,
-  nav ul li:hover {
+  nav ul li.activ a,
+  nav ul li:hover a {
     color: var(--main-text-color) !important;
   }
-  nav ul li:hover {
+  nav ul li a:hover {
     background-color: #ccc;
   }
   nav ul li:last-child {
@@ -123,6 +124,9 @@ nav .fas {
   }
   nav ul li a {
     display: block;
+  }
+  nav ul li:last-child a {
+    color: white !important;
   }
 }
 nav .logo {
@@ -147,11 +151,17 @@ nav ul li {
   transition: 0.3s;
   cursor: pointer;
 }
-nav ul li.activ,
-nav ul li:hover {
-  color: var(--main-text-color);
-}
 nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav ul li.activ a,
+nav ul li a:hover {
+  color: var(--main-text-color);
+  font-weight: 500;
+}
+nav ul li:last-child a {
   color: white;
   text-decoration: none;
   background-color: var(--main-text-color);

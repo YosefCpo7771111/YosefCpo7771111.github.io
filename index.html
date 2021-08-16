@@ -17,11 +17,11 @@
             <div class="logo"><a href="index.html">Training<span>Studio</span></a></div>
             <i class="fas fa-ellipsis-v" id="menuButton"></i>
             <ul id="menu">
-                <li class="activ">Home</li>
-                <li>About</li>
-                <li>Classes</li>
-                <li>Schedules</li>
-                <li>Contact</li>
+                <li class="activ"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#schedule">Schedules</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="">Sign up</a></li>
             </ul>
         </nav>
@@ -40,7 +40,7 @@
         </div>
         <!-- End Header -->
         <!-- Start Programs -->
-        <div class="programs">
+        <div id="about" class="programs">
             <div class="container">
                 <div class="special-heading">
                     <h2>Choose <span>Program</span></h2>
@@ -110,7 +110,7 @@
         </div>
         <!-- End Quote -->
         <!-- Start Classes -->
-        <div class="classes">
+        <div id="classes" class="classes">
             <div class="container">
                 <div class="special-heading">
                     <h2>OUR <span>CLASSES</span></h2>
@@ -119,27 +119,27 @@
                 </div>
                 <div class="content">
                     <div class="classes-sec">
-                        <div class="class activ">
+                        <div id="first-class" class="class activ">
                             <img src="images/tabs-first-icon.png" alt="">
-                            <h3>First Training Class</h3>
+                            <h3 id="first-class-h">First Training Class</h3>
                         </div>
-                        <div class="class">
+                        <div id="second-class" class="class">
                             <img src="images/tabs-first-icon.png" alt="">
-                            <h3>Second Training Class</h3>
+                            <h3 id="second-class-h">Second Training Class</h3>
                         </div>
-                        <div class="class">
+                        <div id="third-class" class="class">
                             <img src="images/tabs-first-icon.png" alt="">
-                            <h3>Third Training Class</h3>
+                            <h3 id="third-class-h">Third Training Class</h3>
                         </div>
-                        <div class="class">
+                        <div id="fourth-class" class="class">
                             <img src="images/tabs-first-icon.png" alt="">
-                            <h3>Fourth Training Class</h3>
+                            <h3 id="fourth-class-h">Fourth Training Class</h3>
                         </div>
                         <a href="">View All Schedules</a>
                     </div>
                     <div class="desc-sec">
-                        <img src="images/training-image-01.jpg" alt="">
-                        <h3>First Training Class</h3>
+                        <img id="main-img" src="images/training-image-01.jpg" alt="">
+                        <h3 id="main-class-h">First Training Class</h3>
                         <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
                         <a href="">VIEW SCHEDULE</a>
                     </div>
@@ -148,7 +148,7 @@
         </div>
         <!-- End Classes -->
         <!-- Start Schedule -->
-        <div class="schedule">
+        <div id="schedule" class="schedule">
             <div class="container">
                 <div class="special-heading diff-heading">
                     <h2>Classes <span>SCHEDULE</span></h2>
@@ -156,15 +156,15 @@
                     <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra<br> ipsum dolor, ultricies fermentum massa consequat eu.</p>
                 </div>
                 <ul>
-                    <li class="activ">Monday</li>
+                    <li id="monday" class="activ">Monday</li>
                     <li>/</li>
-                    <li>Tuesday</li>
+                    <li id="tuesday">Tuesday</li>
                     <li>/</li>
-                    <li>Wednesday</li>
+                    <li id="wednesday">Wednesday</li>
                     <li>/</li>
-                    <li>Thursday</li>
+                    <li id="thursday">Thursday</li>
                     <li>/</li>
-                    <li>Friday</li>
+                    <li id="friday">Friday</li>
                 </ul>
                 <table>
                     <tr>
@@ -251,7 +251,7 @@
         </div>
         <!-- End Trainers -->
         <!-- Start Contact -->
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="container">
                 <div class="text">
                     <h4>Feel free to <span>contact us</span></h4>
@@ -267,5 +267,6 @@
             </div>
         </div>
         <!-- End Footer -->
+        <script src="js/main.js"></script>
     </body>
 </html>
